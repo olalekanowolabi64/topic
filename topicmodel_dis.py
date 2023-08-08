@@ -229,7 +229,7 @@ for i, ax in enumerate(axes.flatten()):
     topic_words = dict(topics[i][1])
     cloud.generate_from_frequencies(topic_words, max_font_size=300)
     plt.gca().imshow(cloud)
-    plt.gca().set_title('Topic ' + str(i), fontdict=dict(size=16))
+    plt.gca().set_title('Topic ' + str(i + 1), fontdict=dict(size=16))
     plt.gca().axis('off')
 
 
